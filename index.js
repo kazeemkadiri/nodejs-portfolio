@@ -16,7 +16,7 @@ const server = http.createServer((request, response) => {
         // route handling 
         switch(urlPath){
             case '/':
-                let homeFilePath = path.join(__dirname, 'pages/index.html');
+                let homeFilePath = path.join(__dirname, 'pages/home.html');
 
                 fs.readFile(homeFilePath, "utf8", function(err, file) {
                     if(err) {        
